@@ -1,6 +1,8 @@
 #include <iostream>
 #include <iomanip>
 
+using namespace std;
+
 struct DynArray {
     int* data;
     int size;
@@ -70,12 +72,12 @@ void setAt(DynArray& a, int index, int value) {
 }
 
 void printDynArr(const DynArray& a) {
-    std::cout << "[";
+    cout << "[";
     for (int i = 0; i < a.size; i++) {
-        std::cout << a.data[i];
-        if (i < a.size - 1) std::cout << ", ";
+        cout << a.data[i];
+        if (i < a.size - 1) cout << ", ";
     }
-    std::cout << "] (size=" << a.size << ", cap=" << a.capacity << ")" << std::endl;
+    cout << "] (size=" << a.size << ", cap=" << a.capacity << ")" << endl;
 }
 
 int main() {
@@ -93,7 +95,7 @@ int main() {
     removeAt(arr, 0);
     printDynArr(arr);
 
-    std::cout << "Element at index 2: " << getAt(arr, 2) << "\n"; 
+    cout << "Element at index 2: " << getAt(arr, 2) << "\n"; 
     setAt(arr, 2, 99);
     printDynArr(arr); 
 
