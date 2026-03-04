@@ -3,7 +3,7 @@
 
 ## Student Information
 - **Name:** Hanin Dhiya Ahmad
-- **Student ID:** [534288]
+- **Student ID:** [24/534288/TK/59218]
 - **Department:** Electrical and Information Engineering, UGM
 
 ## Solutions Description
