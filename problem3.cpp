@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 int linearSearch(int* arr, int n, int target) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == target) {
@@ -41,14 +43,14 @@ void testSearches(int n) {
     int idxLinear = linearSearch(arr, n, targetExists);
     int idxBinary = binarySearch(arr, n, targetExists);
 
-    std::cout << "Size n=" << n << " | Target Exists (" << targetExists << "): Linear=" 
-              << idxLinear << ", Binary=" << idxBinary << std::endl;
+    cout << "Size n=" << n << " | Target Exists (" << targetExists << "): Linear=" 
+              << idxLinear << ", Binary=" << idxBinary << endl;
 
     idxLinear = linearSearch(arr, n, targetNotExists);
     idxBinary = binarySearch(arr, n, targetNotExists);
 
-    std::cout << "Size n=" << n << " | Target Missing (" << targetNotExists << "): Linear=" 
-              << idxLinear << ", Binary=" << idxBinary << std::endl;
+    cout << "Size n=" << n << " | Target Missing (" << targetNotExists << "): Linear=" 
+              << idxLinear << ", Binary=" << idxBinary << endl;
 
     delete[] arr;
 }
